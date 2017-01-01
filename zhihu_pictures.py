@@ -52,9 +52,9 @@ def isLogin():
 def login(url):
     login_data = {
         '_xsrf' : get_xsrf(url),
-        'password' : 'zjh418$!*',
+        'password' : 'pwd',
         'remember_me' : 'true',
-        'email' : '382853730@qq.com'
+        'email' : '123450@qq.com'
     }
     try:#不需要验证码登录
         repr=session.post(LoginUrl, data=login_data, headers=headers)
